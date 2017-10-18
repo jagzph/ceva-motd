@@ -1,0 +1,8 @@
+---
+# tasks file for ceva-motd
+- name: Configuring CEVA MOTD
+  hosts: all
+  tasks: 
+    - name: MOTD
+      template: src=ceva-motd.j2	dest=/etc/motd
+  
